@@ -137,7 +137,7 @@ public class MotorolaQualcommRIL extends RIL implements CommandsInterface {
             case RIL_REQUEST_RESET_RADIO: ret =  responseVoid(p); break;
             case RIL_REQUEST_OEM_HOOK_RAW: ret =  responseRaw(p); break;
             case RIL_REQUEST_OEM_HOOK_STRINGS: ret =  responseStrings(p); break;
-            case RIL_REQUEST_SCREEN_STATE: ret =  responseVoid(p); break;
+            case RIL_REQUEST_SCREEN_STATE: ret =  true; break;
             case RIL_REQUEST_SET_SUPP_SVC_NOTIFICATION: ret =  responseVoid(p); break;
             case RIL_REQUEST_WRITE_SMS_TO_SIM: ret =  responseInts(p); break;
             case RIL_REQUEST_DELETE_SMS_ON_SIM: ret =  responseVoid(p); break;
